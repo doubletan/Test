@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         binding.zsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MainVM.Change("20","张三");
+                MainVM.Change("21","张三");
             }
         });
         binding.lsBtn.setOnClickListener(new View.OnClickListener() {
