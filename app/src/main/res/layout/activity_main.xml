@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable name="user" type="com.lenovo.test.User"/>
+        <variable name="listener" type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.lastName}"/>
+        <Button
+            android:id="@+id/zs_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"/>
+        <Button
+            android:id="@+id/ls_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李四"/>
+        <Button
+            android:id="@+id/dp_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.firstName}"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.lastName}"/>
+    </LinearLayout>
+
+</layout>
